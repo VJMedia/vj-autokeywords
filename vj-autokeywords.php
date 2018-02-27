@@ -4,6 +4,7 @@ Plugin Name: VJMedia: AutoKeywords
 Description: Auto Convert existing Tags to post Keywords
 Version: 1.0
 Author: <a href="http://www.vjmedia.com.hk">Technical Team</a>
+GitHub Plugin URI: https://github.com/VJMedia/vj-autokeywords
 */
 
 require_once("tagaction.inc.php");
