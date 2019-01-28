@@ -7,6 +7,8 @@ Author: <a href="http://www.vjmedia.com.hk">Technical Team</a>
 GitHub Plugin URI: https://github.com/VJMedia/vj-autokeywords
 */
 
+defined('WPINC') || (header("location: /") && die());
+
 require_once("tagaction.inc.php");
 
 function vjautokey_metabox_add() { 

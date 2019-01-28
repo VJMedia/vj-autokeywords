@@ -1,4 +1,6 @@
 <?php
+defined('WPINC') || (header("location: /") && die());
+
 add_action( 'add_tag_form_fields', 'tag_form_custom_field_add', 10 );
 add_action( 'edit_tag_form_fields', 'tag_form_custom_field_edit', 10, 2 );
 add_action( 'created_tag', 'tag_form_custom_field_save', 10, 2 );    
