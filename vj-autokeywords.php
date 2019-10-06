@@ -56,3 +56,10 @@ function vjautokey_update( $post_id ) {
 
 }
 add_action( 'save_post', 'vjautokey_update',99);
+
+
+
+
+function vjautokey_head() { if(is_single() && get_post_type() === 'post' && get_post_meta(get_the_ID(),"_aioseop_keywords",true)){?>
+<meta name="keywords" content="<?=get_post_meta(get_the_ID(),"_aioseop_keywords",true); ?>">
+<?php }} add_action('wp_head', 'vjautokey_head');
